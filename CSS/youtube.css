@@ -6,28 +6,31 @@
 
 body {
     position: relative;
-    background-color: #000;
+    height: 1500px;
+    background-color: #ffffff;
 }
 
 header {
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 50px;
-    background-color: blue;
+    height: 120px;
+    background-color: #fff;
+    z-index: 999;
 }
 
 #topo {
     position: relative;
+    width: auto;
     display: flex;
     flex-direction: row;
     padding: 0 16px;
 }
 
 .container {
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: left;
     padding: 20px;
 }
 
@@ -50,7 +53,7 @@ label span {
     height: 2px;
     width: 100%;
     border-radius: 30px;
-    background: #ffffff;
+    background: #000000;
     transition: 0.25s ease-in-out;
 }
 
@@ -66,8 +69,14 @@ label span:nth-child(3) {
     top: 14px;
 }
 
+#left-section {
+    position: relative;
+    width: 15%;
+    display: flex;
+}
+
 #youtube {
-    padding: 16px;
+    padding: 17px 0 0 17px;
 }
 
 #youtube img {
@@ -76,22 +85,270 @@ label span:nth-child(3) {
 }
 
 #mid-section {
+    position: relative;
     display: flex;
+    width: 70%;  
+}
+
+#navigation-bar {
+    width: 70%;
     margin: auto;
-    justify-content: center;
-    width: 500px;
-    padding: 16px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
 }
 
 #search-style {
     display: block;
     flex: 1;
-    height: 30px;
-    font-size: 14px;
+    width: 500px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
     border: 1px solid #ccc;
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
 }
 
 input[type="search"] {
     text-indent: 25px;
+}
+
+#search-button {
+    width: 60px;
+    height: 40px;
+    opacity: 95%;
+    background-color: rgb(255, 245, 229);
+    border: 1px solid #ccc;
+    border-radius: 0 25px 25px 0;
+    box-sizing: border-box;
+}
+
+#search-button img {
+    padding: 5px 0 5px 10px;
+    width: 30px;
+}
+
+#mid-section img {
+    width: 30px;
+}
+
+#mic {
+    width: 12%;
+    display: flex;
+    margin: auto;
+}
+
+#right-section {
+    width: 15%;
+    text-align: right;
+    margin: auto;
+}
+
+#right-section img {
+    width: 30px;
+    margin: 0 4% 0 4%;
+}
+
+#login {
+    border-radius: 100%;
+}
+
+#baixo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    width: 90%;
+    top: 2vh;
+}
+
+#baixo a {
+    width: auto;
+    display: flex;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#first-blank a {
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.categorias {
+    opacity: 75%;
+    transition: 0.5s;
+}
+
+.categorias a {
+    color: #000000;
+    background-color: #ccc;
+}
+
+.categorias:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+#seta {
+    padding: 0px 14px;
+}
+
+#seta a {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 100%;
+}
+
+#seta a:hover {
+    background-color: #ccc;
+}
+
+#lado {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    left: 0;
+    width: 5%;
+    height: auto;
+    float: left;
+    text-align: center;
+    z-index: 999;
+}
+
+.side-links {
+    width: 100%;
+    padding-bottom: 5vh;
+    margin: auto;
+}
+
+.side-links img {
+    width: 25px;
+    height: 25px;
+}
+
+#meio {
+    position: relative;
+    width: 85%;
+    height: auto;
+    display: grid;
+    top: 5vh;
+    left: 5%;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section a {
+    width: 0;
+    height: 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+section aside {
+    width: 30%;
+    display: block;
+}
+
+.videos {
+    width: 30%;
+}
+
+#ads {
+    width: 335px;
+    border-radius: 15px;
+}
+
+#ads:hover {
+    opacity: 90%;
+}
+
+.thumbnails {
+    width: 340px;
+    border-radius: 15px;
+}
+
+.thumbnails:hover {
+    border-radius: 0;
+}
+
+.profile-channel img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    float: left;
+}
+
+.videos p {
+    padding-left: 50px;
+}
+
+#row2 {
+    display: flex;
+    justify-content: space-around;
+    top: 0vh;
+    margin-top: 10vh;
+}
+
+.line {
+    width: 100%;
+    height: 0;
+    margin-top: 10vh;
+    border-top: 5px solid #ccc;
+}
+
+#row3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#shorts {
+    margin: 5vh 0 0 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+#shorts img {
+    width: 20px;
+    height: 25px;
+}
+
+#shorts p {
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.shorts {
+    width: 15%;
+    margin-top: 8vh;
+}
+
+.shorts p {
+    padding-top: 5px;
+}
+
+.shorts a {
+    width: auto;
+}
+
+.thumbnails2 {
+    width: 170px;
+    border-radius: 15px;
+}
+
+#row4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    padding-bottom: 5vh;
 }
